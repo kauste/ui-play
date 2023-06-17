@@ -51,6 +51,7 @@ function firstSectionAnimation(){
   }, 20000)
 }
 firstSectionAnimation();
+
 const section2 = document.querySelector('.section--2');
 const heading = section2.querySelector('.--heading > h2');
 const paragraph = section2.querySelector('.--paragraph');
