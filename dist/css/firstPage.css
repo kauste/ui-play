@@ -1,0 +1,216 @@
+:root {
+  --nav-family: "Quicksand", sans-serif;
+  --headings-family: "Poiret One", cursive;
+}
+
+body, body * {
+  margin: 0;
+}
+
+.second-body {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #EFEFEF;
+}
+
+h1 {
+  font-family: var(--headings-family);
+  position: absolute;
+  top: 50%;
+  left: 150px;
+  color: #a6ff00;
+  font-size: 40px;
+  letter-spacing: 0.4px;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 30px;
+  font-family: var(--headings-family);
+}
+
+div, p {
+  font-family: var(--nav-family);
+}
+
+.nav-box {
+  background-color: hsla(104, 19%, 43%, 0.7);
+  font-family: var(--nav-family);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.nav-box nav a {
+  width: -moz-fit-content;
+  width: fit-content;
+  text-decoration: none;
+  color: #E8E3D7;
+  padding: 10px 15px;
+  transition: all 0.2s ease;
+  display: inline-block;
+  font-variation-settings: "wght" 500;
+  text-align: center;
+}
+
+.section-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  background-color: #101e17;
+}
+.section-1 img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+.section-2 {
+  display: flex;
+  justify-content: center;
+}
+.section-2 .in-sec-2 {
+  padding: calc(100vh + 110px) 100px 80px 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+.section-2 .in-sec-2 .bamboo {
+  position: absolute;
+  left: 0;
+  top: calc(100vh + 110px);
+}
+.section-2 .in-sec-2 .heading-box {
+  width: 100%;
+  margin-top: 100px;
+  position: relative;
+}
+.section-2 .in-sec-2 .heading-box h2 {
+  opacity: 0.7;
+  position: absolute;
+  bottom: 0;
+  height: 50px;
+  color: #101e17;
+}
+.section-2 .in-sec-2 .paragraph {
+  margin-top: 30px;
+  opacity: 0.7;
+  width: min(900px, 100vw - 500px);
+}
+.section-2 .in-sec-2 .paragraph p {
+  color: #101e17;
+  font-size: 16px;
+  line-height: 1.6em;
+}
+
+.section-3, .section-4 {
+  padding: 80px 100px 40px;
+  display: flex;
+  justify-content: center;
+}
+.section-3 .work-box, .section-4 .work-box {
+  background-color: hsla(104, 19%, 43%, 0.965);
+  color: #fff;
+}
+.section-3 .education-box, .section-4 .education-box {
+  background-color: hsla(0, 0%, 100%, 0.945);
+}
+.section-3 .education-box, .section-3 .work-box, .section-4 .education-box, .section-4 .work-box {
+  width: min(1000px, 100vw - 300px);
+  padding: 70px;
+}
+.section-3 .education-box .heading-box, .section-3 .work-box .heading-box, .section-4 .education-box .heading-box, .section-4 .work-box .heading-box {
+  margin-bottom: 30px;
+}
+.section-3 .education-box .edu-chevron-box, .section-3 .education-box .work-chevron-box, .section-3 .work-box .edu-chevron-box, .section-3 .work-box .work-chevron-box, .section-4 .education-box .edu-chevron-box, .section-4 .education-box .work-chevron-box, .section-4 .work-box .edu-chevron-box, .section-4 .work-box .work-chevron-box {
+  position: relative;
+}
+.section-3 .education-box .edu-chevron-box .chevron-box, .section-3 .education-box .work-chevron-box .chevron-box, .section-3 .work-box .edu-chevron-box .chevron-box, .section-3 .work-box .work-chevron-box .chevron-box, .section-4 .education-box .edu-chevron-box .chevron-box, .section-4 .education-box .work-chevron-box .chevron-box, .section-4 .work-box .edu-chevron-box .chevron-box, .section-4 .work-box .work-chevron-box .chevron-box {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-3 .education-box .edu-chevron-box .chevron-box:has(.chevron-up), .section-3 .education-box .work-chevron-box .chevron-box:has(.chevron-up), .section-3 .work-box .edu-chevron-box .chevron-box:has(.chevron-up), .section-3 .work-box .work-chevron-box .chevron-box:has(.chevron-up), .section-4 .education-box .edu-chevron-box .chevron-box:has(.chevron-up), .section-4 .education-box .work-chevron-box .chevron-box:has(.chevron-up), .section-4 .work-box .edu-chevron-box .chevron-box:has(.chevron-up), .section-4 .work-box .work-chevron-box .chevron-box:has(.chevron-up) {
+  top: 0;
+  right: 0;
+}
+.section-3 .education-box .edu-chevron-box .chevron-box:has(.chevron-down), .section-3 .education-box .work-chevron-box .chevron-box:has(.chevron-down), .section-3 .work-box .edu-chevron-box .chevron-box:has(.chevron-down), .section-3 .work-box .work-chevron-box .chevron-box:has(.chevron-down), .section-4 .education-box .edu-chevron-box .chevron-box:has(.chevron-down), .section-4 .education-box .work-chevron-box .chevron-box:has(.chevron-down), .section-4 .work-box .edu-chevron-box .chevron-box:has(.chevron-down), .section-4 .work-box .work-chevron-box .chevron-box:has(.chevron-down) {
+  bottom: 0;
+  right: 0;
+}
+.section-3 .education-box .edu-chevron-box .chevron-box .chevron, .section-3 .education-box .work-chevron-box .chevron-box .chevron, .section-3 .work-box .edu-chevron-box .chevron-box .chevron, .section-3 .work-box .work-chevron-box .chevron-box .chevron, .section-4 .education-box .edu-chevron-box .chevron-box .chevron, .section-4 .education-box .work-chevron-box .chevron-box .chevron, .section-4 .work-box .edu-chevron-box .chevron-box .chevron, .section-4 .work-box .work-chevron-box .chevron-box .chevron {
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  border-radius: 50%;
+}
+.section-3 .education-box .edu-chevron-box .chevron-box .chevron.chevron-up, .section-3 .education-box .work-chevron-box .chevron-box .chevron.chevron-up, .section-3 .work-box .edu-chevron-box .chevron-box .chevron.chevron-up, .section-3 .work-box .work-chevron-box .chevron-box .chevron.chevron-up, .section-4 .education-box .edu-chevron-box .chevron-box .chevron.chevron-up, .section-4 .education-box .work-chevron-box .chevron-box .chevron.chevron-up, .section-4 .work-box .edu-chevron-box .chevron-box .chevron.chevron-up, .section-4 .work-box .work-chevron-box .chevron-box .chevron.chevron-up {
+  transform: rotateZ(90deg);
+}
+.section-3 .education-box .edu-chevron-box .chevron-box .chevron.chevron-down, .section-3 .education-box .work-chevron-box .chevron-box .chevron.chevron-down, .section-3 .work-box .edu-chevron-box .chevron-box .chevron.chevron-down, .section-3 .work-box .work-chevron-box .chevron-box .chevron.chevron-down, .section-4 .education-box .edu-chevron-box .chevron-box .chevron.chevron-down, .section-4 .education-box .work-chevron-box .chevron-box .chevron.chevron-down, .section-4 .work-box .edu-chevron-box .chevron-box .chevron.chevron-down, .section-4 .work-box .work-chevron-box .chevron-box .chevron.chevron-down {
+  transform: rotateZ(270deg);
+}
+.section-3 .education-box .edu-chevron-box .education-ul, .section-3 .education-box .edu-chevron-box .work-ul, .section-3 .education-box .work-chevron-box .education-ul, .section-3 .education-box .work-chevron-box .work-ul, .section-3 .work-box .edu-chevron-box .education-ul, .section-3 .work-box .edu-chevron-box .work-ul, .section-3 .work-box .work-chevron-box .education-ul, .section-3 .work-box .work-chevron-box .work-ul, .section-4 .education-box .edu-chevron-box .education-ul, .section-4 .education-box .edu-chevron-box .work-ul, .section-4 .education-box .work-chevron-box .education-ul, .section-4 .education-box .work-chevron-box .work-ul, .section-4 .work-box .edu-chevron-box .education-ul, .section-4 .work-box .edu-chevron-box .work-ul, .section-4 .work-box .work-chevron-box .education-ul, .section-4 .work-box .work-chevron-box .work-ul {
+  list-style: none;
+  padding: 0;
+}
+.section-3 .education-box .edu-chevron-box .education-ul li, .section-3 .education-box .edu-chevron-box .work-ul li, .section-3 .education-box .work-chevron-box .education-ul li, .section-3 .education-box .work-chevron-box .work-ul li, .section-3 .work-box .edu-chevron-box .education-ul li, .section-3 .work-box .edu-chevron-box .work-ul li, .section-3 .work-box .work-chevron-box .education-ul li, .section-3 .work-box .work-chevron-box .work-ul li, .section-4 .education-box .edu-chevron-box .education-ul li, .section-4 .education-box .edu-chevron-box .work-ul li, .section-4 .education-box .work-chevron-box .education-ul li, .section-4 .education-box .work-chevron-box .work-ul li, .section-4 .work-box .edu-chevron-box .education-ul li, .section-4 .work-box .edu-chevron-box .work-ul li, .section-4 .work-box .work-chevron-box .education-ul li, .section-4 .work-box .work-chevron-box .work-ul li {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  padding: 5px 20px;
+}
+.section-3 .education-box .edu-chevron-box .chevron-box .chevron, .section-3 .work-box .edu-chevron-box .chevron-box .chevron, .section-4 .education-box .edu-chevron-box .chevron-box .chevron, .section-4 .work-box .edu-chevron-box .chevron-box .chevron {
+  background-color: hsl(104, 19%, 43%);
+  fill: #fff;
+  box-shadow: -4px 0px 0 6px #fff, -4px 0px 0 8px hsla(104, 19%, 43%, 0.965);
+  transition: all 0.25s ease-in;
+}
+.section-3 .education-box .edu-chevron-box .chevron-box:hover, .section-3 .work-box .edu-chevron-box .chevron-box:hover, .section-4 .education-box .edu-chevron-box .chevron-box:hover, .section-4 .work-box .edu-chevron-box .chevron-box:hover {
+  cursor: pointer;
+}
+.section-3 .education-box .edu-chevron-box .chevron-box:hover .chevron, .section-3 .work-box .edu-chevron-box .chevron-box:hover .chevron, .section-4 .education-box .edu-chevron-box .chevron-box:hover .chevron, .section-4 .work-box .edu-chevron-box .chevron-box:hover .chevron {
+  box-shadow: 0 0 0 0 #fff, -4px 0px 0 8px hsla(104, 19%, 43%, 0.965);
+}
+.section-3 .education-box .work-chevron-box .chevron-box .chevron, .section-3 .work-box .work-chevron-box .chevron-box .chevron, .section-4 .education-box .work-chevron-box .chevron-box .chevron, .section-4 .work-box .work-chevron-box .chevron-box .chevron {
+  background-color: #fff;
+  fill: hsl(104, 19%, 43%);
+  box-shadow: -4px 0px 0 6px hsl(104, 19%, 43%), -4px 0px 0 8px #fff;
+  transition: all 0.25s ease-in;
+}
+.section-3 .education-box .work-chevron-box .chevron-box:hover, .section-3 .work-box .work-chevron-box .chevron-box:hover, .section-4 .education-box .work-chevron-box .chevron-box:hover, .section-4 .work-box .work-chevron-box .chevron-box:hover {
+  cursor: pointer;
+}
+.section-3 .education-box .work-chevron-box .chevron-box:hover .chevron, .section-3 .work-box .work-chevron-box .chevron-box:hover .chevron, .section-4 .education-box .work-chevron-box .chevron-box:hover .chevron, .section-4 .work-box .work-chevron-box .chevron-box:hover .chevron {
+  box-shadow: 0 0 0 0 hsl(104, 19%, 43%), -4px 0px 0 8px #fff;
+}
+
+.section-4 {
+  padding-bottom: 80px;
+}
+
+footer {
+  color: #222;
+  height: 100px;
+  background: rgb(218, 218, 218);
+  padding: 20px 200px;
+}
+footer a {
+  text-decoration: none;
+  color: #222;
+}
